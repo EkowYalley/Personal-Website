@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ekow's Website</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* This CSS ensures the footer stays at the bottom */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1; /* This pushes the footer down by taking up all available space */
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background-color:darkgreen; color:white; padding:20px;">
+        <h1>Welcome to Ekow's Website</h1>
+        <nav>
+            <a href="index.html" style="color:white; margin-right:15px;">Home</a>
+            <a href="contact.html" style="color:white;">Contact</a>
+        </nav>
+    </header>
+
+    <main style="padding: 40px; max-width: 1000px; margin: auto; font-family: 'Verdana', sans-serif; color: #333; line-height: 1.6;">
+    
+    <div style="display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: start;">
+        
+        <!-- Left Column: Content -->
+        <div>
+            <h1 style="margin-top: 0; color: #2e7d32;">Professional Portfolio</h1>
+            
+            <section style="margin-bottom: 30px;">
+                <h2 style="border-bottom: 2px solid #lightgreen; padding-bottom: 5px;">Introduction</h2>
+                <p style="font-size: 18px;">
+                    I am <strong>Ekow Yalley</strong>, a Data Science major at <strong>Michigan State University</strong>. 
+                    As a senior in good academic standing, I developed this website to showcase my portfolio of projects 
+                    as a data scientist and programmer. This site serves as a hub for my work and a way to connect for professional opportunities.
+                </p>
+            </section>
+
+            <section style="margin-bottom: 30px;">
+                <h2 style="border-bottom: 2px solid #lightgreen; padding-bottom: 5px;">Experience</h2>
+                
+                <div style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 5px;">MxV Rail | Data Visualization Lead</h3>
+                    <p style="font-size: 18px; margin-top: 0;">
+                        Collaborated with a student team to optimize train maintenance schedules. I performed exploratory 
+                        data analysis to identify trends and presented key insights to stakeholders, developing 
+                        skills in collaborative teamwork and data storytelling.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 5px;">Atesteo | Test Bench Operator</h3>
+                    <p style="font-size: 18px; margin-top: 0;">
+                        Monitored and reported on automotive drive tests for a German engineering firm. I utilized 
+                        specialized software to manage test code, ensure operational efficiency, and communicate 
+                        technical data to supervisors.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h3 style="margin-bottom: 5px;">Responsible A.I. Africa & KNUST</h3>
+                    <p style="font-size: 18px; margin-top: 0;">
+                        Managed the technology front by building the organization's website and designing promotional 
+                        materials for Kwame Nkrumah University of Science and Technology. Worked closely with 
+                        Dr. Elizabeth Koomson to coordinate logistics and event organization.
+                    </p>
+                </div>
+            </section>
+
+            <section style="margin-bottom: 30px;">
+                <h2 style="border-bottom: 2px solid #lightgreen; padding-bottom: 5px;">Education</h2>
+                <p style="font-size: 18px;">
+                    <strong>Michigan State University</strong><br>
+                    B.S. in Data Science | Expected Graduation: May 2026<br>
+                    <em>Honors Student, 3-time Dean's List recipient.</em>
+                </p>
+            </section>
+
+            <section>
+                <h2 style="border-bottom: 2px solid #lightgreen; padding-bottom: 5px;">Projects & Hackathons</h2>
+                <p style="font-size: 18px;">
+                    Active participant in hackathons, including the development of a food bank locator webpage 
+                    and various other programming challenges.
+                </p>
+            </section>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div style="position: sticky; top: 20px;">
+            <img src="IMG_4656.PNG" alt="Ekow Yalley" style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </div>
+
+    </div>
+</main>
+
+
+    <footer style="background-color:lightgreen; padding:15px; text-align:center;">
+        <hr>
+        <p>Author: Ekow Yalley<br> &copy; Copyright 2025</p>
+    </footer>
+
+</body>
+</html>
