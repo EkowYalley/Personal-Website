@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ekow Yalley is an operations-minded data analyst with a University of Michigan background in econometrics, data science, and biology.">
+  <meta name="description" content="Ekow Yalley is a data analyst who builds practical models, reporting pipelines, and operational data systems with Python, SQL, and AWS.">
   <title>Ekow Yalley | Data Analyst</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,9 +22,9 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow">Bellbrook, Ohio · Early-career analytics</p>
+        <p class="eyebrow">Columbus, Ohio · Data science and analytics</p>
         <h1>Operations-minded data analyst who turns messy information into decisions people can use.</h1>
-        <p class="lede">I’m Ekow Yalley, a University of Michigan graduate with a B.S. in Econometrics (Data Science) and Biology. I work across Python, SQL, data validation, and reporting, and I’m pursuing junior data analyst, BI, reporting, and data-quality roles in Ohio.</p>
+        <p class="lede">I’m Ekow Yalley, a University of Michigan graduate with a B.S. in Econometrics/Data Science and Biology. I build models, reporting pipelines, validation systems, and operational data workflows with Python, SQL, and AWS.</p>
         <div class="actions">
           <a class="button primary" href="#projects">View selected work</a>
           <a class="button secondary" href="mailto:ekowny@gmail.com">Email Ekow</a>
@@ -40,7 +40,7 @@
       <div><strong>University of Michigan</strong><span>B.S., double major</span></div>
       <div><strong>Python + SQL</strong><span>analysis and automation</span></div>
       <div><strong>Validation first</strong><span>checks, limits, reproducibility</span></div>
-      <div><strong>Ohio focused</strong><span>early-career data roles</span></div>
+      <div><strong>Operational context</strong><span>from data to decisions</span></div>
     </section>
 
     <section class="section" id="experience">
@@ -52,17 +52,22 @@
         <article>
           <div class="timeline-meta"><span>May 2021–Present</span><span>Current</span></div>
           <div><h3>Eco-Rubber Limited</h3><p class="role">Operations Data Analyst</p></div>
-          <div><p>Building weather-data workflows for tapping decisions, equipment-monitoring concepts for maintenance alerts, and a centralized SQL/ETL architecture for factory, inventory, purchasing, and shipping records.</p><p class="note">Implementation scope and measured results are still being documented; no production impact is claimed here.</p></div>
+          <div><p>Build weather-data workflows for tapping decisions, equipment-monitoring systems for maintenance alerts, and a centralized SQL/ETL architecture connecting factory, inventory, purchasing, and shipping records.</p></div>
         </article>
         <article>
           <div class="timeline-meta"><span>Sep 2024–Aug 2025</span><span>Professional</span></div>
-          <div><h3>ATESTEO North America</h3><p class="role">Test Bench Operator</p></div>
+          <div><h3>ATESTEO North America</h3><p class="role">Test Bench Operator - Data &amp; Automation [Contractor]</p></div>
           <p>Programmed and adjusted drive-test scripts, investigated anomalies in test data, and coordinated with technicians and engineers to keep component tests running and accurately reported.</p>
         </article>
         <article>
           <div class="timeline-meta"><span>Aug 2025–Dec 2025</span><span>Team project</span></div>
-          <div><h3>MxV Rail</h3><p class="role">Data Lead</p></div>
-          <p>Used Python and Orange to explore months of train-run data and created visualizations comparing rail-car behavior across operating conditions and track segments.</p>
+          <div><h3>MxV Rail</h3><p class="role">Data Lead [Contractor]</p></div>
+          <p>Structured comparisons across rail cars, operating conditions, and track segments; used Python and Orange to surface recurring differences and turn them into visual material for technical team discussions.</p>
+        </article>
+        <article>
+          <div class="timeline-meta"><span>Jan 2021–Present</span><span>Nonprofit leadership</span></div>
+          <div><h3>Equiduct Education Program</h3><p class="role">Founder</p></div>
+          <p>Founded and continue to lead a 501(c)(3) nonprofit that pairs college volunteers with K–12 students for free tutoring and mentorship through a volunteer-led service model.</p>
         </article>
       </div>
     </section>
@@ -70,38 +75,30 @@
     <section class="section projects" id="projects">
       <div class="section-heading">
         <p class="eyebrow">Selected work</p>
-        <h2>Projects with the context left in</h2>
-        <p>Each project states what the data can support, what remains uncertain, and whether the work was completed independently, in a course, or with a team.</p>
+        <h2>Projects built around real analytical decisions</h2>
+        <p>Each project shows the question, approach, result, and checks behind the work.</p>
       </div>
       <div class="project-grid">
         <article class="project-card featured">
           <div class="project-kicker"><span>Predictive modeling</span><span>6 validation checks passed</span></div>
           <h3>AWS NYC 311 Service Resolution Modeling</h3>
           <p>Built a leakage-safe logistic-regression baseline using 49,999 validated public NYC 311 records and a target derived from actual creation and closure timestamps.</p>
+          <figure class="project-visual"><img src="nyc311_model_diagnostics.png" alt="ROC curve and confusion matrix for the NYC 311 service-resolution model"><figcaption>Held-out model diagnostics: 88.3% ROC AUC across 10,000 test records.</figcaption></figure>
           <dl class="metrics">
             <div><dt>Accuracy</dt><dd>78.7%</dd></div>
-            <div><dt>Recall</dt><dd>73.7%</dd></div>
-            <div><dt>Model</dt><dd>Logistic regression</dd></div>
+            <div><dt>Balanced accuracy</dt><dd>79.9%</dd></div>
+            <div><dt>ROC AUC</dt><dd>88.3%</dd></div>
           </dl>
-          <p class="note"><strong>What the result means:</strong> the corrected baseline outperformed the 59.5% majority-class benchmark and achieved 88.3% ROC AUC. It is still historical, closed-request data—not a deployment-ready prioritization system.</p>
+          <p class="note"><strong>Result:</strong> the model materially outperformed the 59.5% majority-class benchmark. The one limitation is that production use would require time-based validation and drift monitoring.</p>
           <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>AWS</span><span>Athena</span></div>
           <div class="card-actions"><a href="https://github.com/EkowYalley/AWS-NYC311-Resolution-Modeling" target="_blank" rel="noopener">GitHub repository</a></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-kicker"><span>SQL analysis</span><span>5 validation checks passed</span></div>
-          <h3>Rental Revenue Analysis in SQL</h3>
-          <p>Analyzed $67,406.56 of linked rental revenue across 200 actors in the fictional Sakila database using joins, grouped aggregation, CTEs, and window functions.</p>
-          <p class="note"><strong>Validation and limitation:</strong> five unmatched payments totaling $9.95 were quantified and excluded. Revenue is associated with an actor’s films; it does not measure that actor’s causal contribution to demand.</p>
-          <div class="tags"><span>MySQL</span><span>SQLAlchemy</span><span>Docker</span><span>Jupyter</span></div>
-          <div class="card-actions"><a href="https://github.com/EkowYalley/SQL-Rental-Revenue-Analysis" target="_blank" rel="noopener">GitHub repository</a></div>
         </article>
 
         <article class="project-card">
           <div class="project-kicker"><span>Data pipeline</span><span>8 checks · 4 tests passed</span></div>
           <h3>Regional Sales Reporting Pipeline</h3>
           <p>Built a reproducible Python pipeline that validates sales and customer files, joins them, aggregates regional/category reporting, and reconciles $7,816.00 from source to output.</p>
-          <p class="note"><strong>Scope:</strong> the included 48-row dataset is a small supplied sample. The project demonstrates workflow design, error detection, testing, and reconciliation—not production scale.</p>
+          <p class="note"><strong>Result:</strong> eight pipeline checks and four unit tests pass, with revenue reconciling exactly from source to final output. The current sample contains 48 transactions.</p>
           <div class="tags"><span>Python</span><span>pandas</span><span>Data quality</span><span>Unit testing</span></div>
           <div class="card-actions"><a href="https://github.com/EkowYalley/Regional-Sales-Reporting-Pipeline" target="_blank" rel="noopener">GitHub repository</a></div>
         </article>
@@ -109,38 +106,34 @@
         <article class="project-card">
           <div class="project-kicker"><span>Team project</span><span>Private data</span></div>
           <h3>Rail Operations Data Exploration</h3>
-          <p>Analyzed train-run data with Python and Orange, comparing cars across operating conditions and track sections and translating patterns into visual material for team discussions.</p>
-          <p class="note"><strong>Current limitation:</strong> the underlying rail data and code are not public, and the analysis does not establish causal safety or maintenance improvements.</p>
+          <p>As Data Lead, organized months of train-run data into car-, condition-, and segment-level comparisons, surfaced recurring differences in rail-car behavior, and built comparative visual material for technical discussions about maintenance and safety priorities.</p>
+          <p class="note"><strong>Private-data note:</strong> the underlying rail dataset and code cannot be published.</p>
           <div class="tags"><span>Python</span><span>Orange</span><span>EDA</span><span>Visualization</span></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-kicker"><span>Python application</span><span>Runnable locally</span></div>
-          <h3>Me vs. You</h3>
-          <p>Built a two-player adaptation of Snake with Python Turtle, including separate keyboard controls, live scoring, body growth, and collision rules for both players.</p>
-          <p class="note"><strong>Review status:</strong> the source passes syntax validation and the repository now documents controls, provenance, and limitations. Graphical game behavior is not yet covered by automated tests.</p>
-          <div class="tags"><span>Python</span><span>Turtle</span><span>Event handling</span><span>Game logic</span></div>
-          <div class="card-actions"><a href="https://ekowyalley.github.io/Professional-Portfolio/me-vs-you.html">Project note</a><a href="https://github.com/EkowYalley/Me-vs-You" target="_blank" rel="noopener">GitHub repository</a></div>
-        </article>
       </div>
     </section>
+
+    <section class="section fun-projects" id="fun-projects">
+      <div class="section-heading"><p class="eyebrow">Built for fun</p><h2>Side projects and experiments</h2><p>Smaller builds that show curiosity and range without competing with the data-focused work above.</p></div>
+      <article class="fun-card"><div><p class="project-kicker"><span>Python application</span><span>Runnable locally</span></p><h3>Me vs. You</h3><p>A two-player Snake adaptation built with Python Turtle, including separate controls, live scoring, body growth, and player-to-player collision logic.</p></div><div class="card-actions"><a href="https://ekowyalley.github.io/Professional-Portfolio/me-vs-you.html">Project note</a><a href="https://github.com/EkowYalley/Me-vs-You" target="_blank" rel="noopener">GitHub repository</a></div></article>
 
     <section class="section education" id="education">
       <div class="section-heading"><p class="eyebrow">Education</p><h2>University of Michigan — Ann Arbor</h2></div>
       <div class="education-card">
-        <div><h3>Bachelor of Science (B.S.)</h3><p>Double major: Econometrics (Data Science) and Biology</p></div>
+        <div><h3>Bachelor of Science (B.S.)</h3><p>Double major: Econometrics/Data Science and Biology</p></div>
         <div class="education-meta"><span>Sep 2017–May 2021</span><span>GPA 3.88</span></div>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <p class="eyebrow">Contact</p>
-      <h2>Looking for careful early-career analysts in Ohio?</h2>
-      <p>I’m interested in junior data analyst, BI, reporting, operations-analytics, and data-quality roles.</p>
+      <h2>Looking for an analyst who can connect technical work to operations?</h2>
+      <p>I’m exploring junior data analyst, BI, reporting, operations-analytics, data-quality, and data science opportunities.</p>
       <div class="actions"><a class="button primary" href="mailto:ekowny@gmail.com">ekowny@gmail.com</a><a class="button secondary light" href="https://www.linkedin.com/in/ekow-yalley-29869a260/" target="_blank" rel="noopener">LinkedIn</a><a class="button secondary light" href="https://github.com/EkowYalley" target="_blank" rel="noopener">GitHub</a></div>
     </section>
   </main>
 
-  <footer><span>Ekow Yalley</span><span>Bellbrook, Ohio</span></footer>
+  <footer><span>Ekow Yalley</span><span>Columbus, Ohio</span></footer>
 </body>
 </html>

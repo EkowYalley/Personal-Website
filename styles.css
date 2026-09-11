@@ -56,6 +56,9 @@ h3 { margin-bottom: .35rem; font-size: 1.35rem; }
 .project-card { display: flex; flex-direction: column; min-height: 470px; padding: 2rem; border: 1px solid var(--line); background: var(--paper); }
 .project-card.featured { grid-row: span 2; background: var(--navy); color: var(--white); }
 .project-card.featured .note { color: #cbd5e3; }
+.project-visual { margin: 1.3rem 0 .5rem; padding: .65rem; background: #f7f5ef; border-radius: .35rem; }
+.project-visual img { display: block; width: 100%; height: auto; }
+.project-visual figcaption { margin-top: .5rem; color: #536173; font-size: .76rem; }
 .project-kicker { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; color: var(--muted); font-size: .73rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .featured .project-kicker { color: #cbd5e3; }
 .project-card h3 { font-size: 2rem; letter-spacing: -.03em; }
@@ -67,6 +70,10 @@ h3 { margin-bottom: .35rem; font-size: 1.35rem; }
 .tags span { padding: .32rem .55rem; border: 1px solid currentColor; border-radius: 99px; font-size: .72rem; }
 .card-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; }
 .card-actions a { color: inherit; font-size: .88rem; font-weight: 800; text-underline-offset: .25rem; }
+.fun-projects { padding-top: 5rem; }
+.fun-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: end; padding: 2rem; background: var(--white); border: 1px solid var(--line); border-left: 6px solid var(--maize); }
+.fun-card p { max-width: 760px; color: var(--muted); }
+.fun-card .project-kicker { justify-content: flex-start; margin-bottom: 1rem; }
 .education-card { display: flex; justify-content: space-between; gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .education-card p { margin: 0; }
 .education-meta { display: flex; gap: 1.5rem; color: var(--muted); font-weight: 700; }
@@ -93,6 +100,7 @@ footer { padding: 1.5rem 2rem; display: flex; justify-content: space-between; ba
   .timeline article { grid-template-columns: 1fr; gap: .7rem; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-row: auto; }
+  .fun-card { grid-template-columns: 1fr; align-items: start; }
   .education-card { flex-direction: column; }
 }
 @media (max-width: 520px) {
