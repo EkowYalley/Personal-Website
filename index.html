@@ -3,140 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ekow Yalley is a data analyst who builds practical models, reporting pipelines, and operational data systems with Python, SQL, and AWS.">
-  <title>Ekow Yalley | Data Analyst</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Ekow Yalley's analytics project portfolio: Python, SQL, data quality, validation, reporting, and reproducible analysis.">
+  <title>Ekow Yalley | Analytics Project Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
+<body class="portfolio-home">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Ekow Yalley home">EY</a>
-    <nav aria-label="Primary navigation">
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a class="brand" href="index.html"><strong>Ekow Yalley</strong><span>Analytics Project Portfolio</span></a>
+    <nav aria-label="Primary navigation"><a href="index.html#projects">Projects</a><a href="projects.html">Project Library</a><a href="index.html#methods">Methods</a><a href="about.html">About Me</a></nav>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">Columbus, Ohio · Data science and analytics</p>
-        <h1>Operations-minded data analyst who turns messy information into decisions people can use.</h1>
-        <p class="lede">I’m Ekow Yalley, a University of Michigan graduate with a B.S. double major in Data Science (Econometrics) and Biology. I build models, reporting pipelines, validation systems, and operational data workflows with Python, SQL, and AWS.</p>
+    <section class="portfolio-hero">
+      <div>
+        <p class="eyebrow">Python · SQL · data quality · reporting</p>
+        <h1>Analysis that shows its work.</h1>
+        <p class="lede">I’m Ekow Yalley, an operations-minded data analyst and University of Michigan graduate with a B.S. double major in Data Science (Econometrics) and Biology. I use Python, SQL, and statistical modeling to turn operational questions into clear analysis.</p>
         <div class="actions">
-          <a class="button primary" href="#projects">View selected projects</a>
-          <a class="button secondary" href="mailto:ekowny@gmail.com">Email Ekow</a>
+          <a class="button primary" href="#projects">Explore case studies</a>
+          <a class="button secondary" href="https://github.com/EkowYalley">View GitHub</a>
         </div>
       </div>
-      <figure class="portrait-card">
-        <img src="IMG_4656.PNG" alt="Portrait of Ekow Yalley">
-        <figcaption>Python · SQL · data quality · business intelligence</figcaption>
-      </figure>
+      <aside class="evidence-card" aria-label="Portfolio evidence summary">
+        <p class="card-label">Evidence at a glance</p>
+        <dl>
+          <div><dt>49,999</dt><dd>validated NYC 311 records</dd></div>
+          <div><dt>78.7%</dt><dd>test-set accuracy</dd></div>
+          <div><dt>79.9%</dt><dd>balanced accuracy</dd></div>
+          <div><dt>88.3%</dt><dd>ROC AUC</dd></div>
+        </dl>
+        <p>Model metrics reproduced from the repository’s saved evaluation outputs.</p>
+      </aside>
     </section>
 
-    <section class="proof-strip" aria-label="Core strengths">
-      <div><strong>University of Michigan</strong><span>B.S., double major</span></div>
-      <div><strong>Python + SQL</strong><span>analysis and automation</span></div>
-      <div><strong>Validation first</strong><span>checks, limits, reproducibility</span></div>
-      <div><strong>Operational context</strong><span>from data to decisions</span></div>
+    <section class="section methods" id="methods">
+      <div class="section-intro">
+        <p class="eyebrow">How I work</p>
+        <h2>Trust is part of the deliverable.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Define the question</h3><p>Translate a broad request into a specific decision, target, or reporting output.</p></article>
+        <article><span>02</span><h3>Audit the inputs</h3><p>Check types, missing values, duplicates, join keys, ranges, and row-level exceptions.</p></article>
+        <article><span>03</span><h3>Build reproducibly</h3><p>Keep setup, transformations, dependencies, and run instructions understandable to another analyst.</p></article>
+        <article><span>04</span><h3>Reconcile the result</h3><p>Compare totals, test assumptions, quantify exclusions, and state what the output cannot prove.</p></article>
+      </div>
+      <div class="tool-line"><strong>Working toolkit</strong><span>Python</span><span>SQL</span><span>pandas</span><span>scikit-learn</span><span>MySQL</span><span>AWS S3</span><span>Athena</span><span>Jupyter</span><span>Git</span></div>
     </section>
 
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Data work grounded in operations</h2>
+    <section class="section" id="projects">
+      <div class="section-intro" id="case-studies">
+        <p class="eyebrow">Selected case studies</p>
+        <h2>Start with the decision, then inspect the evidence.</h2>
+        <p>Three detailed write-ups cover the question, methods, and results. The Project Library includes these case studies and the rest of my work.</p>
+        <div class="actions"><a class="button primary" href="projects.html">Browse Full Project Library</a></div>
       </div>
-      <div class="timeline">
-        <article>
-          <div class="timeline-meta"><span>May 2021–Present</span><span>Current</span></div>
-          <div><h3>Eco-Rubber Limited</h3><p class="role">Operations Data Analyst</p></div>
-          <div><p>Build weather-data workflows for tapping decisions, equipment-monitoring systems for maintenance alerts, and a centralized SQL/ETL architecture connecting factory, inventory, purchasing, and shipping records.</p></div>
-        </article>
-        <article>
-          <div class="timeline-meta"><span>Sep 2024–Aug 2025</span><span>Professional</span></div>
-          <div><h3>ATESTEO North America</h3><p class="role">Test Bench Operator - Data &amp; Automation [Contractor]</p></div>
-          <p>Programmed and adjusted drive-test scripts, investigated anomalies in test data, and coordinated with technicians and engineers to keep component tests running and accurately reported.</p>
-        </article>
-        <article>
-          <div class="timeline-meta"><span>Aug 2025–Dec 2025</span><span>Team project</span></div>
-          <div><h3>MxV Rail</h3><p class="role">Data Lead [Contractor]</p></div>
-          <p>Structured comparisons across rail cars, operating conditions, and track segments; used Python and Orange to surface recurring differences and turn them into visual material for technical team discussions.</p>
-        </article>
-        <article>
-          <div class="timeline-meta"><span>Jan 2021–Present</span><span>Nonprofit leadership</span></div>
-          <div><h3>Equiduct Education Program</h3><p class="role">Founder</p></div>
-          <p>Founded and continue to lead a 501(c)(3) nonprofit that pairs college volunteers with K–12 students for free tutoring and mentorship through a volunteer-led service model.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section projects" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Selected projects</p>
-        <h2>Projects built around real analytical decisions</h2>
-        <p>Explore three featured projects below, or browse the full library for more work.</p>
-        <div class="actions"><a class="button primary" href="https://ekowyalley.github.io/Professional-Portfolio/projects.html">Browse Full Project Library</a></div>
-      </div>
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div class="project-kicker"><span>Predictive modeling</span><span>6 validation checks passed</span></div>
-          <h3>AWS NYC 311 Service Resolution Modeling</h3>
-          <p>Built a leakage-safe logistic-regression baseline using 49,999 validated public NYC 311 records and a target derived from actual creation and closure timestamps.</p>
-          <figure class="project-visual"><img src="nyc311_model_diagnostics.png" alt="ROC curve and confusion matrix for the NYC 311 service-resolution model"><figcaption>ROC curve and confusion matrix generated from the model’s saved test-set predictions.</figcaption></figure>
-          <dl class="metrics">
-            <div><dt>Accuracy</dt><dd>78.7%</dd></div>
-            <div><dt>Balanced accuracy</dt><dd>79.9%</dd></div>
-            <div><dt>ROC AUC</dt><dd>88.3%</dd></div>
-          </dl>
-          <p class="note"><strong>Result:</strong> the model materially outperformed the 59.5% majority-class benchmark. The one limitation is that production use would require time-based validation and drift monitoring.</p>
-          <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>AWS</span><span>Athena</span></div>
-          <div class="card-actions"><a href="https://ekowyalley.github.io/Professional-Portfolio/aws-nyc311.html">Read case study</a><a href="https://github.com/EkowYalley/AWS-NYC311-Resolution-Modeling" target="_blank" rel="noopener">GitHub repository</a></div>
+      <div class="case-list">
+        <article class="case-row feature">
+          <div class="case-number">01</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Predictive modeling</span><span>Python + AWS</span></div>
+            <h3>AWS NYC 311 Service Resolution Modeling</h3>
+            <p>Can public service requests be classified by whether they close within 72 hours—without leaking the answer into the model?</p>
+            <ul class="result-list">
+              <li><strong>78.71%</strong> accuracy</li>
+              <li><strong>79.88%</strong> balanced accuracy</li>
+              <li><strong>88.30%</strong> ROC AUC</li>
+              <li><strong>6/6</strong> validation checks passed</li>
+            </ul>
+            <figure class="case-visual"><img src="img/nyc311_model_diagnostics.png" alt="ROC curve and confusion matrix for the NYC 311 service-resolution model"><figcaption>ROC curve and confusion matrix generated from 10,000 saved test-set predictions.</figcaption></figure>
+          </div>
+          <div class="case-action"><a href="aws-nyc311.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-kicker"><span>Data pipeline</span><span>8 checks · 4 tests passed</span></div>
-          <h3>Regional Sales Reporting Pipeline</h3>
-          <p>Built a reproducible Python pipeline that validates sales and customer files, joins them, aggregates regional/category reporting, and reconciles $7,816.00 from source to output.</p>
-          <p class="note"><strong>Result:</strong> eight pipeline checks and four unit tests pass, with revenue reconciling exactly from source to final output. The current sample contains 48 transactions.</p>
-          <div class="tags"><span>Python</span><span>pandas</span><span>Data quality</span><span>Unit testing</span></div>
-          <div class="card-actions"><a href="https://ekowyalley.github.io/Professional-Portfolio/sales-pipeline.html">Read case study</a><a href="https://github.com/EkowYalley/Regional-Sales-Reporting-Pipeline" target="_blank" rel="noopener">GitHub repository</a></div>
+        <article class="case-row">
+          <div class="case-number">02</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Reporting pipeline</span><span>Python + pandas</span></div>
+            <h3>Regional Sales Reporting Pipeline</h3>
+            <p>How can two small source files become a clean, repeatable regional report with validation before and after the join?</p>
+            <ul class="result-list">
+              <li><strong>$7,816</strong> source-to-output reconciliation</li>
+              <li><strong>8</strong> pipeline checks</li>
+              <li><strong>4</strong> unit tests</li>
+            </ul>
+          </div>
+          <div class="case-action"><a href="sales-pipeline.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-kicker"><span>Team project</span><span>Private data</span></div>
-          <h3>Rail Operations Data Exploration</h3>
-          <p>As Data Lead, organized months of train-run data into car-, condition-, and segment-level comparisons, surfaced recurring differences in rail-car behavior, and built comparative visual material for technical discussions about maintenance and safety priorities.</p>
-          <p class="note"><strong>Private-data note:</strong> the underlying rail dataset and code cannot be published.</p>
-          <div class="tags"><span>Python</span><span>Orange</span><span>EDA</span><span>Visualization</span></div>
-          <div class="card-actions"><a href="https://ekowyalley.github.io/Professional-Portfolio/rail-operations.html">Read case study</a></div>
+        <article class="case-row private">
+          <div class="case-number">03</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Professional analysis</span><span>Private data</span></div>
+            <h3>Rail Operations Data Exploration</h3>
+            <p>As Data Lead, structured car-, condition-, and segment-level comparisons across months of train-run data and turned recurring behavioral differences into visual material for technical team discussions.</p>
+          </div>
+          <div class="case-action"><a href="rail-operations.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
-
       </div>
     </section>
 
-    <section class="section fun-projects" id="fun-projects">
-      <div class="section-heading"><p class="eyebrow">Built for fun</p><h2>Side projects and experiments</h2><p>Smaller builds that show curiosity and range without competing with the data-focused work above.</p></div>
-      <article class="fun-card"><div><p class="project-kicker"><span>Python application</span><span>Runnable locally</span></p><h3>Me vs. You</h3><p>A two-player Snake adaptation built with Python Turtle, including separate controls, live scoring, body growth, and player-to-player collision logic.</p></div><div class="card-actions"><a href="https://ekowyalley.github.io/Professional-Portfolio/me-vs-you.html">Project note</a><a href="https://github.com/EkowYalley/Me-vs-You" target="_blank" rel="noopener">GitHub repository</a></div></article>
-    </section>
-
-    <section class="section education" id="education">
-      <div class="section-heading"><p class="eyebrow">Education</p><h2>University of Michigan — Ann Arbor</h2></div>
-      <div class="education-card">
-        <div><h3>Bachelor of Science (B.S.)</h3><p>Double major: Data Science (Econometrics) and Biology</p></div>
-        <div class="education-meta"><span>Sep 2017–May 2021</span></div>
+    <section class="section library-preview" id="project-library">
+      <div class="section-intro">
+        <p class="eyebrow">Project library</p>
+        <h2>What I explore in my free time</h2>
+        <p>Games, numerical experiments, and small technical builds that let me test ideas outside formal project work.</p>
       </div>
+      <div class="library-grid">
+        <article><p class="status">Fun project · runnable</p><h3>Me vs. You</h3><p>A two-player Snake game built with Python Turtle, including independent controls, scoring, growth, and player-to-player collision logic.</p><a href="me-vs-you.html">View project →</a></article>
+        <article><p class="status">Numerical methods</p><h3>Numerical Computing Experiments</h3><p>Power iteration, solver validation, and controlled performance benchmarking.</p><a href="numerical-computing.html">View project →</a></article>
+        <article><p class="status">Simulation</p><h3>Numba Monte Carlo Pi</h3><p>Estimating pi from one million random samples using compiled Python.</p><a href="https://github.com/EkowYalley/Project_Numba">View repository →</a></article>
+        <article><p class="status">Analysis in progress</p><h3>Football Awards Analysis</h3><p>Exploring Ballon d’Or rankings through visualization and regression.</p><a href="projects.html#in-flight">View project in library →</a></article>
+      </div>
+      <div class="actions"><a class="button primary" href="projects.html">Browse Full Project Library</a></div>
     </section>
 
-    <section class="contact" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Looking for an analyst who can connect technical work to operations?</h2>
-      <p>I’m exploring junior data analyst, BI, reporting, operations-analytics, data-quality, and data science opportunities.</p>
-      <div class="actions"><a class="button primary" href="mailto:ekowny@gmail.com">Email</a><a class="button secondary light" href="https://www.linkedin.com/in/ekow-yalley-29869a260/" target="_blank" rel="noopener">LinkedIn</a><a class="button secondary light" href="https://github.com/EkowYalley" target="_blank" rel="noopener">GitHub</a></div>
-    </section>
   </main>
 
-  <footer><span>Ekow Yalley</span><span>Columbus, Ohio</span></footer>
+  <footer><span>© 2026 Ekow Yalley</span><span>Columbus, Ohio</span></footer>
 </body>
 </html>
