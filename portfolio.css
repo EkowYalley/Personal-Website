@@ -163,3 +163,33 @@ footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem 2rem 2.5rem; dis
 .portfolio-home { background: #fff; }
 .portfolio-home .portfolio-hero::before { content: none; }
 .portfolio-home .library-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+:root { --paper: #fff; --white: #fff; --line: #d9dde5; --navy: #00274c; --maize: #ffcb05; }
+.home-intro { display: flex; align-items: center; gap: 1.2rem; }
+.home-intro img { flex: 0 0 auto; width: 88px; height: 88px; object-fit: cover; object-position: center 32%; border-radius: 50%; }
+.home-intro .lede { font-size: 1.2rem; }
+.portfolio-home .case-list { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 1.25rem; border: 0; }
+.portfolio-home .case-row { display: flex; flex-direction: column; gap: .8rem; padding: 1.5rem; margin: 0; border: 1px solid var(--line); }
+.portfolio-home .case-row.feature { grid-row: span 2; background: var(--navy); color: white; border-top: 5px solid var(--maize); }
+.portfolio-home .feature .case-main > p, .portfolio-home .feature figcaption { color: #dce7f3; }
+.portfolio-home .feature .case-number, .portfolio-home .feature .result-list strong { color: var(--maize); }
+.portfolio-home .feature .case-meta { color: var(--navy); }
+.portfolio-home .case-action { align-self: flex-start; margin-top: auto; }
+.portfolio-home .feature .case-action a:hover, .portfolio-home .feature .case-action a:focus { color: var(--maize); }
+.portfolio-home .library-preview { max-width: none; padding: 5rem max(1rem, calc((100% - var(--max)) / 2 + 2rem)); background: var(--navy); color: white; }
+.portfolio-home .library-preview .section-intro p { color: #dce7f3; }
+.portfolio-home .library-preview .library-grid { color: var(--ink); }
+.portfolio-home .library-preview .button { background: var(--maize); color: var(--navy); }
+@media (max-width: 720px) {
+  .portfolio-home .case-list { grid-template-columns: 1fr; }
+  .portfolio-home .case-row.feature { grid-row: auto; }
+}
+@media (max-width: 450px) {
+  .home-intro { align-items: flex-start; }
+  .home-intro img { width: 62px; height: 62px; }
+}
+.about-page .about-bio { max-width: 65ch; color: var(--muted); }
+.about-page .hero { align-items: start; }
+.about-page .portrait-card { margin-top: 1.25rem; }
+.library-hero { max-width: none; padding-inline: max(1rem, calc((100% - var(--max)) / 2 + 2rem)); background: var(--navy); color: white; }
+.library-hero .eyebrow { color: var(--maize); }
+.library-hero .lede { color: #dce7f3; }
