@@ -213,6 +213,38 @@ footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem 2rem 2.5rem; dis
 .library-hero .eyebrow { color: var(--navy); }
 .library-hero .lede { color: var(--muted); }
 .catalog-grid article { background: #fff; }
+.site-header .brand img { width: 58px; height: 58px; object-fit: cover; object-position: center 32%; border-radius: 50%; }
+.library-page .catalog-section { padding-block: 4rem; }
+.library-page .catalog-section:nth-of-type(even) {
+  max-width: none;
+  padding-inline: max(1rem, calc((100% - var(--max)) / 2 + 2rem));
+  background: var(--navy);
+  color: white;
+}
+.library-page .catalog-section:nth-of-type(even) .catalog-heading > p { color: #dce7f3; }
+.library-page .catalog-section:nth-of-type(even) .eyebrow { color: var(--maize); }
+.library-page .catalog-section article { color: var(--ink); }
+.catalog-chart { display: block; width: 100%; height: auto; border: 1px solid var(--line); margin-block: .5rem 1rem; }
+.catalog-metrics, .catalog-flow { display: flex; flex-wrap: wrap; gap: .8rem; margin: .5rem 0 1rem; padding: 0; }
+.catalog-metrics > div, .catalog-flow > li { padding: .65rem .9rem; background: #edf3fa; border-left: 3px solid var(--navy); list-style: none; }
+.catalog-metrics dt { color: var(--muted); font-size: .8rem; }
+.catalog-metrics dd { margin: 0; font-size: 1.2rem; font-weight: 700; }
+.about-page .hero-copy .lede, .about-page .about-bio { font: 1.12rem/1.65 Arial, Helvetica, sans-serif; color: var(--muted); }
+.about-page .timeline article { margin-bottom: 1rem; padding: 1.5rem; border: 1px solid var(--line); border-left: 4px solid var(--navy); }
+.about-page .timeline { border: 0; }
+.about-page .education {
+  max-width: none;
+  padding: 4.5rem max(1rem, calc((100% - var(--max)) / 2 + 2rem));
+  background: var(--navy);
+  color: white;
+}
+.about-page .education .eyebrow { color: var(--maize); }
+.about-page .education-meta { color: #dce7f3; }
+.about-page .contact { background: white; color: var(--ink); }
+.about-page .contact h2, .about-page .contact .button.light { color: var(--ink); }
+.about-page .contact .button.light { border-color: var(--navy); }
+.about-page .contact > p:not(.eyebrow) { color: var(--muted); }
+.about-page .contact .eyebrow { color: var(--navy); }
 @media (max-width: 720px) {
   .portfolio-home .case-list .case-row { grid-column: auto; grid-row: auto; }
 }
